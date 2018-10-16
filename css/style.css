@@ -1,0 +1,73 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+body{
+	padding: 25 px;
+	height: 95%;
+	width: 95%;
+}
+	
+.filterbar {
+	margin: 10px 0px;
+	width: 300px;
+	border: 1px solid black;
+}
+
+footer {
+  position: absolute;
+  background-color: #333;
+  text-align: center;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+#loginpanel {
+	border: 1px solid black;
+	width: 300px;
+	margin: 10px 10px;
+	height: 200px;
+	
+}
+
+#registerpanel {
+	border: 1px solid black;
+	width: 300px;
+	height: 200px;
+	margin: 10px 10px;
+	
+}
+  
+.loginregister {
+	height: 650px;
+	width: 220px;
+}
+
+.home {
+	margin: 25px;
+}
+
+.table {
+	border: 1px solid black;
+}
