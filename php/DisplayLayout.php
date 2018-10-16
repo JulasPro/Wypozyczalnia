@@ -37,7 +37,6 @@
 				<li><a href="./cars.php">Samochody</a></li>
 				<li><a href="./contact.php">Kontakt</a></li>
 				<?php
-				CheckUserStatus();
 				if(isset($_SESSION['uzytkownik'])){
 					?><li><a href="./settings.php">Ustawienia</a></li><?php
 				}
@@ -52,7 +51,6 @@
 			<footer>
 				<p>Strona stworzona przez: Julian Chodorowski<br/>
 				Przykładowe dane</p>
-				<?php echo $_SESSION['uzytkownik']; ?>
 			</footer>
 		</div>
 		</body>
@@ -107,6 +105,22 @@
 					<tr><td>Powtórz hasło:</td><td><input type="password" name="pass2" minlength="6" maxlength="16"></td>
 					<tr><td>Email:</td><td><input type="email" name="email"></td>
 					<tr><td colspan="2"><button type="submit" value="reg_submit">Zarejestruj</button></td>
+				</table>
+			</form>
+		</div>
+		<?php
+	}
+	
+		Function DisplayChangePassForm(){
+		?>
+		<div id="loginpanel">
+		<h4>Logowanie</h4>
+			<form action="changepassform.php" method="post" id="changepass">
+				<table>
+					<tr><td>Stare hasło:</td><td><input type="password" name="oldpass" minlength="6" maxlength="16"></td>
+					<tr><td>Nowe hasło:</td><td><input type="password" name="newpass" minlength="6" maxlength="16"></td>
+					<tr><td>Powtórz nowe hasło:</td><td><input type="password" name="newpass2" minlength="6" maxlength="16"></td>
+					<tr><td colspan="2"><button type="submit" value="changepass_submit">Zmień</button></td>
 				</table>
 			</form>
 		</div>
